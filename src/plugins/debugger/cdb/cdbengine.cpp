@@ -279,7 +279,7 @@ void CdbEngine::adjustOperateByInstruction(bool operateByInstruction)
         return;
     m_lastOperateByInstruction = operateByInstruction;
     runCommand({QLatin1String(m_lastOperateByInstruction ? "l-t" : "l+t"), NoFlags});
-    runCommand({QLatin1String(m_lastOperateByInstruction ? "l-s" : "l+s"), NoFlags});
+    //runCommand({QLatin1String(m_lastOperateByInstruction ? "l-s" : "l+s"), NoFlags});  QTCREATORBUG-25054
 }
 
 bool CdbEngine::canHandleToolTip(const DebuggerToolTipContext &context) const
