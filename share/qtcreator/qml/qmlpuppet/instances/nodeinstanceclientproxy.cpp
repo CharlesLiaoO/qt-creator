@@ -32,6 +32,7 @@
 #include <QFile>
 #include <QFileInfo>
 #include <QBuffer>
+#include <cctype>
 
 #include "nodeinstanceserverinterface.h"
 
